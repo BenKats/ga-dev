@@ -1,9 +1,0 @@
-{
-        // Set the default
-    "editor.formatOnSave": true,
-    // Enable per-language
-    "[html]": {
-        "editor.formatOnSave": true
-    },
-    "prettier.tabWidth": 4
-}
