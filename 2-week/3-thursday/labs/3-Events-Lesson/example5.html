@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Example 5</title>
+        <style>
+            div {
+                width: 200px;
+                height: 200px;
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="example">click here</div>
+        <p id="demo">demo</p>
+        <script>
+            function showCoords(event) {
+                let x = event.clientX;
+                let y = event.clientY;
+                let coordinates = `X coo ${x} Y coo ${y}`;
+                document.getElementById('demo').innerHTML = coordinates;
+            }
+
+            let x = document.querySelector('#example').addEventListener('click', showCoords);
+        </script>
+    </body>
+</html>

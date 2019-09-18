@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Example 2</title>
+    </head>
+    <body>
+        <p>Please enter your name:</p>
+        <input type="text" id="fname" onchange="myFunction()" />
+        <script>
+            function myFunction() {
+                let x = document.getElementById("fname");
+                console.log(x);
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

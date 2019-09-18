@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Example 6</title>
+        <style></style>
+    </head>
+    <body>
+        <h1>Key events</h1>
+        <p id="log"></p>
+        <script>
+            function getKeys(e) {
+                console.log(e);
+                log.textContent += `${e.code}`;
+            }
+
+            // const myLog = document.getElementById('log');
+            document.addEventListener('keyup', getKeys);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Example 4</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            .circle {
+                display: inline-block;
+                background: chartreuse;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="circle"></div>
+        <script>
+            document.querySelector('.circle').addEventListener('click', turnRed);
+
+            function turnRed() {
+                this.style.backgroundColor = 'red';
+            }
+
+            // const turnRed = () => {
+            //     style.backgroundColor = 'red';
+            // };
+        </script>
+    </body>
+</html>
