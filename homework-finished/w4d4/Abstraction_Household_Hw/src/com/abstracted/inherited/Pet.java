@@ -17,7 +17,7 @@ class Dog extends Pet {
 
     @Override
     public void feedPet() {
-        System.out.println("You feed your dog a bone.");
+        System.out.println("You feed your dog " + this.name + " a bone.");
     }
 
     @Override

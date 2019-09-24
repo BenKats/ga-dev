@@ -18,7 +18,7 @@ public class Animal {
         return name;
     }
 
-    public boolean isEndangered() {
+    public boolean getEndangered() {
         return isEndangered;
     }
 
@@ -42,13 +42,11 @@ public class Animal {
         this.numLegs = numLegs;
     }
 
-    public void setTopSpeed(int topSpeed) {
-        this.topSpeed = topSpeed;
-    }
+    public void setTopSpeed(int topSpeed) { this.topSpeed = topSpeed; }
 
     @Override
     public String toString(){
-        return "It is " + this.isEndangered  + " that the " + this.name + " is endanagered. They have " + this.numLegs + " legs " + "and a top speed of " + this.topSpeed + " mph.";
+        return "It is " + this.isEndangered  + " that the " + this.name + " is endangered. They have " + this.numLegs + " legs " + "and a top speed of " + this.topSpeed + " mph.";
     }
     public static void main(String[] args) {
         System.out.println("Hello, world");
@@ -77,5 +75,6 @@ public class Animal {
 
         //Print some output
         System.out.println(animal.toString());
+        System.out.println(animal.numLegs);
     }
 }

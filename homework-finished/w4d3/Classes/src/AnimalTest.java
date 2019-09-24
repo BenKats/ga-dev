@@ -57,7 +57,7 @@ Animal animal = new Animal("Test", true, 10, 100);
 
     @Test
     public void testToString() {
-        String text ="It is true that the Test is endanagered. They have 10 legs and a top speed of 100 mph.";
+        String text ="It is true that the Test is endangered. They have 10 legs and a top speed of 100 mph.";
         Assert.assertEquals(text, animal.toString());
 
     }
